@@ -12,13 +12,15 @@ First a list of numbers 2, 3, ..., LIMIT is created and no numbers are initially
 The first number not crossed out is 2, so 2 is prime. Thus, we can mark 2 as prime.  
   
 Then we can proceed to cross out the numbers that are multiples of 2 starting from 4 (this is the "sieving" step).  
-Our list now looks list: 2 3 ~~4~~ 5 ~~6~~ 7 ~~8~~ 9 ~~10~~ 11 ~~12~~ 13 ~~14~~ 15  
+Our list now looks like: 2 3 ~~4~~ 5 ~~6~~ 7 ~~8~~ 9 ~~10~~ 11 ~~12~~ 13 ~~14~~ 15  
   
 The next number that is not crossed out is 3. Thus we mark 3 as prime and remove all the multiples of 3.  
-Our list now looks list: 2 3 ~~4~~ 5 ~~6~~ 7 ~~8~~ ~~9~~ ~~10~~ 11 ~~12~~ 13 ~~14~~ ~~15~~  
+Our list now looks like: 2 3 ~~4~~ 5 ~~6~~ 7 ~~8~~ ~~9~~ ~~10~~ 11 ~~12~~ 13 ~~14~~ ~~15~~  
 
 The next number is not crossed out is 5. Since 5^2 > 15 (ie. our LIMIT) we can conlude that all of the remaining numbers that are not crossed out are primes.  
-Conversely we can conclude that all of the crossed numbers are composite. 
+Conversely we can conclude that all of the crossed numbers are composite.    
+
+In general we can stop trying "sieveing" primes once the sqaure of a newly found prime is greater than our LIMIT.
 
 ## How do you use the program?
 The program can be from the command: `python3 sieve.py [-h] [--frame-rate FRAME_RATE] [--dimensions DIMENSIONS]`.  
