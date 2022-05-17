@@ -2,7 +2,7 @@
 Python visualization tool for the Sieve of Eratosthenes. Draws the found primes in red and the "sieved" composites in blue.
 
 ## Author
-Made by Israel Kwilinski using the Pyglet library. 
+Made by Israel Kwilinski. 
 
 ## What is the Sieve of Eratosthenes?
 The Sieve of Erathosthenes is an algorithm for primes (and composites) from 2 to a given limit. It was developed in Ancient Greece by Eratosthenes, a greek mathematician. 
